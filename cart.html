@@ -91,48 +91,92 @@
 
 
     <!-- Product Start -->
-    <div class="container-xxl py-5">
+    <div class="container-fluid py-5 wow fadeInUp">
         <section class="mt-5" >
-            <div class="container py-5 h-100 wow fadeInUp">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-xl-11">
+            <div class="container py-5 h-100 wow fadeInIn">
+              <div class="row d-flex h-100">
+                <div class="col-md-8 mt-4">
                   <div class="card border-0 shadow-sm" >
                     <div class="row g-0">
-                      <div class="col-md-6 col-lg-5 ">
-                        <img src="img/product-1.jpg" 
-                            alt="login form" class="img-fluid h-100" />
-                      </div>
-                      <div class="col-md-6 col-lg-7 px-4">
-                        <h4 class="text-primary mt-4">Nyanya Nyekundu</h4>
-                        <h5 class="text-danger">Tsh 1,000 /= @kg</h5>
-                        <p>
-                            Hizi Nyanya zinabei nafuu, zinapatikana ferry mitaa ya Navy kama una shida nazo unaweza kuja kuziichukua
-                            bei inaweza pungua ukija mwenyewe!
-                        </p>
-                        <ul class="list">
-                            <li><a class="active" href="#"><span>Kitengo</span> : Mazao</a></li>
-                            <li><a href="#"><span>Zilizopo</span> : 30 kg</a></li>
-                            <li><a href="#"><span>Delivery</span> : Free</a></li>
-                        </ul>
-                        <div class="row mt-3 d-flex align-items-center justify-content-center">
-                            <div class="col-md-8 mt-4">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-6">
-                                        <input type="text" name="qty" id="sst" maxlength="10" value="1" title="Quantity:" class="form-control">
-                                    </div>
-                                    <div class="col-6">
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="btn btn-sm btn-outline-primary increase items-count" type="button">+</button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;" class="btn btn-sm btn-outline-primary reduced items-count" type="button">-</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-4">
-                                <a class="btn-primary btn w-100" href="cart.html">Add to Cart</a>
-                            </div>
-                        </div>
-                      </div>
+                      <table class="table ">
+                          <thead>
+                              <tr>
+                                  <th>Bidhaa</th>
+                                  <th>Bei</th>
+                                  <th>Idadi</th>
+                                  <th>Jumla</th>
+                                  <th>Toa</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td scope="row">Nyanya</td>
+                                  <td>2000</td>
+                                  <td>24</td>
+                                  <td>24</td>
+                                  <td><i class="fa fa-trash text-danger"></i></td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Nyanya</td>
+                                <td>2000</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td><i class="fa fa-trash text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Nyanya</td>
+                                <td>2000</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td><i class="fa fa-trash text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Nyanya</td>
+                                <td>2000</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td><i class="fa fa-trash text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Nyanya</td>
+                                <td>2000</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td><i class="fa fa-trash text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Nyanya</td>
+                                <td>2000</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td><i class="fa fa-trash text-danger"></i></td>
+                            </tr>
+                          </tbody>
+                      </table>
                     </div>
                   </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card card border-0 shadow-sm "> 
+                        <h4 class="px-2">Cart Summary</h4>
+                        <hr class="mx-2">
+                        <div class="d-flex justify-content-between px-2">
+                            <p>Products: </p>
+                            <p>45,000</p>
+                        </div>
+                        <div class="d-flex justify-content-between px-2">
+                            <p>Delivery: </p>
+                            <p>45,000</p>
+                        </div>
+                        <hr class="mx-2">
+                        <div class="d-flex justify-content-between px-2">
+                            <h3>Jumla</h3>
+                            <h4>45435345</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary w-100 my-2">Checkout</a>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
