@@ -25,10 +25,14 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/icons.min.css" rel="stylesheet">
+    
+    <!-- Icons are here -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +70,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link active"><i class="mdi mdi-home"></i> Home</a>
                         <a href="elimu.html" class="nav-item nav-link">Elimu</a>
                         <a href="mbolea.html" class="nav-item nav-link">Mbolea</a>
                         <a href="madawa.html" class="nav-item nav-link">Madawa</a>
@@ -90,99 +94,127 @@
         <!-- Navbar End -->
 
 
-    <!-- Product Start -->
-    <div class="container-fluid py-5 wow fadeInUp">
-        <section class="mt-5" >
-            <div class="container py-5 h-100 wow fadeInIn">
-              <div class="row d-flex h-100">
-                <div class="col-md-8 mt-4">
-                  <div class="card border-0 shadow-sm" >
-                    <div class="row g-0">
-                      <table class="table ">
-                          <thead>
-                              <tr>
-                                  <th>Bidhaa</th>
-                                  <th>Bei</th>
-                                  <th>Idadi</th>
-                                  <th>Jumla</th>
-                                  <th>Toa</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td scope="row">Nyanya</td>
-                                  <td>2000</td>
-                                  <td>24</td>
-                                  <td>24</td>
-                                  <td><i class="fa fa-trash text-danger"></i></td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Nyanya</td>
-                                <td>2000</td>
-                                <td>24</td>
-                                <td>24</td>
-                                <td><i class="fa fa-trash text-danger"></i></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Nyanya</td>
-                                <td>2000</td>
-                                <td>24</td>
-                                <td>24</td>
-                                <td><i class="fa fa-trash text-danger"></i></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Nyanya</td>
-                                <td>2000</td>
-                                <td>24</td>
-                                <td>24</td>
-                                <td><i class="fa fa-trash text-danger"></i></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Nyanya</td>
-                                <td>2000</td>
-                                <td>24</td>
-                                <td>24</td>
-                                <td><i class="fa fa-trash text-danger"></i></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Nyanya</td>
-                                <td>2000</td>
-                                <td>24</td>
-                                <td>24</td>
-                                <td><i class="fa fa-trash text-danger"></i></td>
-                            </tr>
-                          </tbody>
-                      </table>
+    <!-- The cart demo is here -->
+    <section class="shoping-cart spad mt-5">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Products</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/product-1.jpg" class="img-rounded" width="50px" height="50px" alt="">
+                                        <h5>Vegetable’s Package</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $55.00
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $110.00
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/product-2.jpg" class="img-rounded" width="50px" height="50px" alt="">
+                                        <h5>Fresh Garden Vegetable</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $39.00
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $39.99
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/product-3.jpg" class="img-rounded" width="50px" height="50px" alt="">
+                                        <h5>Organic Bananas</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $69.00
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $69.99
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card card border-0 shadow-sm "> 
-                        <h4 class="px-2">Cart Summary</h4>
-                        <hr class="mx-2">
-                        <div class="d-flex justify-content-between px-2">
-                            <p>Products: </p>
-                            <p>45,000</p>
-                        </div>
-                        <div class="d-flex justify-content-between px-2">
-                            <p>Delivery: </p>
-                            <p>45,000</p>
-                        </div>
-                        <hr class="mx-2">
-                        <div class="d-flex justify-content-between px-2">
-                            <h3>Jumla</h3>
-                            <h4>45435345</h4>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary w-100 my-2">Checkout</a>
-                        </div>
-                    </div>
-                </div>
-              </div>
             </div>
-          </section>
-    </div>
-    <!-- Product End -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                            Upadate Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Discount Codes</h5>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your coupon code">
+                                <button type="submit" class="site-btn">APPLY COUPON</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Cart Total</h5>
+                        <ul>
+                            <li>Subtotal <span>$454.98</span></li>
+                            <li>Total <span>$454.98</span></li>
+                        </ul>
+                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the cart demo -->
 
 
 
